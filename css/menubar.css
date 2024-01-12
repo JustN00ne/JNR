@@ -1,0 +1,30 @@
+ul {
+    list-style-type: none;
+    border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden;
+    background-color: #333;
+    transition: 0.3s;
+}
+
+li {
+    float: left;
+    transition: 0.3s;
+}
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 17px 17px;
+        text-decoration: wavy;
+        transition: 0.1s ease-in-out;
+    }
+
+        li a:hover {
+            background: #c61aff;
+        }
+
