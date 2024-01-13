@@ -10,7 +10,7 @@ form.forEach((item, i) => {
 
 window.onload = () => {
     if(sessionStorage.name){
-        location.href = '/';
+        location.href = '/JNR/';
     }
 }
 
