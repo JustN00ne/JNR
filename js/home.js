@@ -2,7 +2,7 @@ const greeting = document.querySelector('.greeting');
 
 window.onload = () => {
     if(!sessionStorage.name){
-        location.href = '/login';
+        location.href = '/JNR/login';
     } else{
         greeting.innerHTML = `hello ${sessionStorage.name}`;
     }
