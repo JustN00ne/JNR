@@ -23,7 +23,7 @@ const submitBtn = document.querySelector('.submit-btn');
 
 if(name == null){ // means login page is open
     submitBtn.addEventListener('click', () => {
-        fetch('/JNR/login-user',{
+        fetch('/JNR/login-user/',{
             method: 'post',
             headers: new Headers({'Content-Type': 'application/json'}),
             body: JSON.stringify({
@@ -39,7 +39,7 @@ if(name == null){ // means login page is open
 } else{ // means register page is open
 
     submitBtn.addEventListener('click', () => {
-        fetch('/JNR/register-user', {
+        fetch('/JNR/register-user/', {
             method: 'post',
             headers: new Headers({'Content-Type': 'application/json'}),
             body: JSON.stringify({
@@ -62,7 +62,7 @@ const validateData = (data) => {
     } else{
         sessionStorage.name = data.name;
         sessionStorage.email = data.email;
-        location.href = '/';
+        location.href = '/JNR/';
     }
 }
 
